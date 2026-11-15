@@ -1,7 +1,5 @@
 # NextLat Memory Study
 
-**Aditi & Sushanth** | The Science of Deep Learning, Fall 2026
-
 We compare standard next-token prediction (NTP) with NextLat to study how well
 Transformers retain useful information from earlier in a sequence.
 
