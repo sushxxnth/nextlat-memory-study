@@ -1,0 +1,19 @@
+{
+  "block_size": 69,
+  "vocab_size": 106,
+  "n_layer": 12,
+  "n_head": 6,
+  "n_embd": 384,
+  "dropout": 0.0,
+  "bias": false,
+  "context_length": 62,
+  "goal_range": [
+    25,
+    75
+  ],
+  "eos_token_id": 104,
+  "fim_token_id": -1,
+  "is_fim_mode": false,
+  "compute_hidden_state_rank": false,
+  "use_fused": false
+}

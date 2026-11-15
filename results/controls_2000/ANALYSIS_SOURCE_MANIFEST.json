@@ -1,0 +1,9 @@
+{
+  "scope": "Post-training reporting and read-only audits; no fitting or checkpoint selection",
+  "sha256": {
+    "memory/control_report.py": "b9d37e14800d036fa5bbe1d928b7602c77c85596a3b23d3f4a8e57d4d7023927",
+    "memory/readout_checks.py": "aded251fd80312952c824e508e8f3ead5aea92f52f6d095e68dd404c643f1bc8",
+    "memory/checkpoint_recheck.py": "7fc7b78bbbfa1c2b4bcb18ad01ddbe0d82ff745a48f79510e5f0f3a171ed3e9e",
+    "memory/sweep_report.py": "6255d1a7fed8e67efb0f8ff151f81050958243dee3ac3474cedad4cc6eef3f45"
+  }
+}

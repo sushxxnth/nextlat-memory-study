@@ -1,0 +1,56 @@
+{
+  "seed": 1239,
+  "layers": 2,
+  "heads": 4,
+  "width": 128,
+  "train_delays": [
+    4,
+    8,
+    16
+  ],
+  "eval_delays": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "batch_size": 32,
+  "steps": 6000,
+  "eval_every": 500,
+  "eval_examples": 1024,
+  "probe_examples_per_delay": 1024,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "horizon": 3,
+  "lambda_aux": 1.0,
+  "proj_factor": 0.5,
+  "threads": 2,
+  "precision": "32-true",
+  "num_cues": 4,
+  "validation_delays": [
+    4,
+    8,
+    16
+  ],
+  "probe_delays": [
+    4,
+    8,
+    16
+  ],
+  "scope": "four-cue factorial delay-distribution and token-supervision controls; fixed final budget",
+  "loss_scope": "full"
+}

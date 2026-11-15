@@ -1,0 +1,40 @@
+{
+  "source_run": "/Users/sushanth.c/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/outputs/nextlat-published/memory/runs/controls_v3_6000",
+  "source_plan_sha256": "881ae14124b011df2f47cc5cd464524fe992c9bedb6c9f24a6ca03f28cc1ef5c",
+  "analysis_source_sha256": "38beee29ecbe757f579c83dfc8a2c4c7bb435fe67657dba06e7942bfc0ab41c5",
+  "seeds": [
+    1237,
+    1238,
+    1239
+  ],
+  "delays": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "sites": [
+    "embedding",
+    "block1",
+    "block2",
+    "concat_blocks",
+    "final_norm"
+  ],
+  "shuffled_label_repeats": 20,
+  "primary": "Before-query final-normalized state, D=64, response-supervised models; affine OLS and official CE heads.",
+  "probe_training_delays": [
+    4,
+    8,
+    16
+  ],
+  "test_reuse": "Exploratory robustness on previously viewed test families; not fresh confirmation.",
+  "targets": "Four cue-bit marginals, plus 4-way nuisance for affine probes. No future query side information.",
+  "affine": "Training-only StandardScaler, affine OLS; fixed Ridge alpha=1 sensitivity check; threshold=.5.",
+  "ce": "Official Probe.linear_probes, four bias-free binary heads, raw final-normalized features; LBFGS max_iter=200, fixed L2=sum(W^2)/(2*N*4).",
+  "shuffle": "20 fixed permutations: whole families plus independent within-family rows; shuffled training labels, true test labels.",
+  "interpretation": "Linear accessibility, not proof of information erasure. No test layer/probe selection; all layers and cells reported."
+}

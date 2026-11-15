@@ -1,0 +1,199 @@
+{
+  "checked_models": 24,
+  "query_perturbation_checks": 768,
+  "all_before_query_states_bitwise_unchanged": true,
+  "records": [
+    {
+      "run": "sparse_full_gpt/seed1237/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_full_gpt/seed1238/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_full_gpt/seed1239/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_full_nextlat/seed1237/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_full_nextlat/seed1238/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_full_nextlat/seed1239/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_gpt/seed1237/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_gpt/seed1238/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_gpt/seed1239/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_nextlat/seed1237/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_nextlat/seed1238/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "sparse_response_nextlat/seed1239/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_gpt/seed1237/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_gpt/seed1238/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_gpt/seed1239/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_nextlat/seed1237/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_nextlat/seed1238/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_full_nextlat/seed1239/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_gpt/seed1237/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_gpt/seed1238/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_gpt/seed1239/gpt",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_nextlat/seed1237/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_nextlat/seed1238/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    },
+    {
+      "run": "dense_response_nextlat/seed1239/nextlat",
+      "delay": 64,
+      "examples": 32,
+      "future_query_changed": true,
+      "before_query_state_bitwise_unchanged": true,
+      "query_state_changed": true
+    }
+  ]
+}

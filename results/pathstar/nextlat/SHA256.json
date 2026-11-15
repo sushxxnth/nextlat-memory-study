@@ -1,0 +1,10 @@
+{
+  "training.csv": "852ea877a15dfe8bd7a8fbbc24081244c194574e1af002c1b97373f1e19065a4",
+  "config.json": "909e66983c1570ddf1dcb0961b98acc83f28a6e3ae48e99fc65950e4aba2c433",
+  "results.json": "8ca31be8e98b9414a82255d95a6295f4e60a222be65c4e0349f83cd880789d31",
+  "validation.jsonl": "ad49c0b92a16e85207abf15ed0b3309b8f123a4dee07e50f5b2bd44404ee3e80",
+  "slurm.err": "3e85ff5263614014602c0e3ee8e96ee0b4dd9e2200128d1ea61116f0a5d39b05",
+  "slurm.out": "16f26a71cdaeede40312fdb627f091f24296900215519eee8c86822c4d57aebd",
+  "environment.json": "175d0449ba1a8c58ec909dfe3cea0de40242c637ff28bbd458aa38d12b4736a4",
+  "model_config.json": "9fd84b83f84a2ee6e9b127d3212d3ab89310a22fc6f01eacc6280dec4fcd1ca6"
+}

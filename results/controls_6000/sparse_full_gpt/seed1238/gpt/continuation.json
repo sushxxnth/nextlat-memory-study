@@ -1,0 +1,7 @@
+{
+  "source": "/Users/sushanth.c/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/outputs/nextlat-published/memory/runs/controls_v3/sparse_full_gpt/seed1238/gpt",
+  "source_steps": 2000,
+  "new_budget": 6000,
+  "source_checkpoint_sha256": "f2b1978ef347cad077df9fea2a8e0e5c8ea613e96bb304e5fd959fb0ce0d51bf",
+  "rule": "Only config.steps metadata is changed in the copied checkpoint. Model/optimizer/data RNG/logs are retained. Original files are untouched."
+}

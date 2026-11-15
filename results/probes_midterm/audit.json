@@ -1,0 +1,41 @@
+{
+  "completed_models": 24,
+  "training_seeds": [
+    1237,
+    1238,
+    1239
+  ],
+  "frozen_backbone": true,
+  "trained_on_separate_probe_families": true,
+  "train_delays": [
+    4,
+    8,
+    16
+  ],
+  "examples_per_training_delay": 1024,
+  "test_examples_per_delay": 1024,
+  "test_delays": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "layers_and_embedding_reported": true,
+  "cached_final_state_checks": 264,
+  "cached_final_states_bitwise_equal": true,
+  "original_checkpoints_unchanged": true,
+  "source_plan_unchanged": true,
+  "null_permutations_per_model_site": 20,
+  "new_probe_unit_tests_passed": 3,
+  "ce_optimizer_max_iterations": 200,
+  "ce_gradient_max_range": [
+    1.2849998398236018e-07,
+    0.000791453177458753
+  ],
+  "ce_optimizer_caveat": "Fixed iteration cap; not all fits reached requested gradient tolerance. OLS and ridge provide optimizer-independent checks.",
+  "reuse": "Previously viewed test families and 6000-step checkpoints; exploratory, not an independent replication."
+}

@@ -1,0 +1,492 @@
+{
+  "checked_runs": 24,
+  "delays": [
+    8,
+    12,
+    64
+  ],
+  "checked_run_delay_pairs": 72,
+  "scope": "Full checkpoint reload and Transformer forward passes on original held-out test families, with answer/EOS excluded. No fitting or checkpoint selection.",
+  "records": {
+    "sparse_full_gpt/seed1237/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.3017578125,
+        "restricted_recall": 0.501953125,
+        "non_answer_rate": 0.3974609375,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.25390625,
+        "restricted_recall": 0.51953125,
+        "non_answer_rate": 0.537109375,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_full_gpt/seed1238/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.3125,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 0.3759765625,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.4150390625,
+        "restricted_recall": 0.583984375,
+        "non_answer_rate": 0.3193359375,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_full_gpt/seed1239/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.19921875,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 0.603515625,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.0,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 1.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_full_nextlat/seed1237/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.4453125,
+        "restricted_recall": 0.46484375,
+        "non_answer_rate": 0.0234375,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.0,
+        "restricted_recall": 0.55078125,
+        "non_answer_rate": 1.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_full_nextlat/seed1238/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.23828125,
+        "restricted_recall": 0.5078125,
+        "non_answer_rate": 0.5234375,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.125,
+        "restricted_recall": 0.599609375,
+        "non_answer_rate": 0.79296875,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_full_nextlat/seed1239/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.4326171875,
+        "restricted_recall": 0.515625,
+        "non_answer_rate": 0.181640625,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.15234375,
+        "restricted_recall": 0.8046875,
+        "non_answer_rate": 0.84765625,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_gpt/seed1237/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.5,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.578125,
+        "restricted_recall": 0.578125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_gpt/seed1238/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.48828125,
+        "restricted_recall": 0.48828125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.72265625,
+        "restricted_recall": 0.72265625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_gpt/seed1239/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.291015625,
+        "restricted_recall": 0.4951171875,
+        "non_answer_rate": 0.4169921875,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.5458984375,
+        "restricted_recall": 0.625,
+        "non_answer_rate": 0.0927734375,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_nextlat/seed1237/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.5078125,
+        "restricted_recall": 0.5078125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.7021484375,
+        "restricted_recall": 0.7021484375,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_nextlat/seed1238/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.5078125,
+        "restricted_recall": 0.5078125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.75390625,
+        "restricted_recall": 0.75390625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "sparse_response_nextlat/seed1239/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.5,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.875,
+        "restricted_recall": 0.875,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_gpt/seed1237/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.15625,
+        "restricted_recall": 0.5,
+        "non_answer_rate": 0.6953125,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_gpt/seed1238/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.390625,
+        "restricted_recall": 0.55078125,
+        "non_answer_rate": 0.28515625,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_gpt/seed1239/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.0,
+        "restricted_recall": 0.4912109375,
+        "non_answer_rate": 1.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_nextlat/seed1237/nextlat": {
+      "8": {
+        "recall": 0.98828125,
+        "restricted_recall": 0.98828125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.98828125,
+        "restricted_recall": 0.98828125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.45703125,
+        "restricted_recall": 0.6171875,
+        "non_answer_rate": 0.265625,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_nextlat/seed1238/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.24609375,
+        "restricted_recall": 0.5625,
+        "non_answer_rate": 0.56640625,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_full_nextlat/seed1239/nextlat": {
+      "8": {
+        "recall": 0.97265625,
+        "restricted_recall": 0.97265625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.515625,
+        "restricted_recall": 0.6640625,
+        "non_answer_rate": 0.19921875,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_gpt/seed1237/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.45703125,
+        "restricted_recall": 0.62890625,
+        "non_answer_rate": 0.34375,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_gpt/seed1238/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.97265625,
+        "restricted_recall": 0.97265625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.6953125,
+        "restricted_recall": 0.6953125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_gpt/seed1239/gpt": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.65625,
+        "restricted_recall": 0.65625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_nextlat/seed1237/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 0.98828125,
+        "restricted_recall": 0.98828125,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.7734375,
+        "restricted_recall": 0.7734375,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_nextlat/seed1238/nextlat": {
+      "8": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.8515625,
+        "restricted_recall": 0.8515625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    },
+    "dense_response_nextlat/seed1239/nextlat": {
+      "8": {
+        "recall": 0.97265625,
+        "restricted_recall": 0.97265625,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "12": {
+        "recall": 1.0,
+        "restricted_recall": 1.0,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      },
+      "64": {
+        "recall": 0.7734375,
+        "restricted_recall": 0.7734375,
+        "non_answer_rate": 0.0,
+        "query_states_bitwise_equal": true
+      }
+    }
+  }
+}

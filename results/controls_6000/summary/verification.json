@@ -1,0 +1,23 @@
+{
+  "completed_models": 24,
+  "independent_training_seeds": [
+    1237,
+    1238,
+    1239
+  ],
+  "intermediate_steps": 2000,
+  "final_steps": 6000,
+  "total_final_training_rows": 144000,
+  "initial_training_log_prefixes_preserved": true,
+  "original_checkpoints_unchanged": true,
+  "correctness_checks_passed": 27,
+  "plan_and_training_source_hashes_verified": true,
+  "upstream_source_hashes_verified": true,
+  "matching_training_streams_within_schedule": true,
+  "identical_evaluation_and_probe_families_across_cells": true,
+  "full_checkpoint_run_delay_rechecks": 72,
+  "query_hidden_states_bitwise_reproduced": true,
+  "normal_output_head_checks": 408,
+  "latent_output_head_checks": 204,
+  "limitations": "Three-seed exploratory controls; all gates and both budgets retained. Dense/full pairs pass learning gates in only one seed; no universal ranking or information-erasure claim."
+}

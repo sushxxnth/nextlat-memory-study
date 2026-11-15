@@ -1,0 +1,35 @@
+{
+  "seed": 1237,
+  "layers": 2,
+  "heads": 4,
+  "width": 128,
+  "train_delays": [
+    4,
+    8,
+    16
+  ],
+  "eval_delays": [
+    4,
+    8,
+    12,
+    16,
+    32,
+    64
+  ],
+  "batch_size": 32,
+  "steps": 100,
+  "eval_every": 100,
+  "eval_examples": 128,
+  "probe_examples_per_delay": 128,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "horizon": 3,
+  "lambda_aux": 1.0,
+  "proj_factor": 0.5,
+  "threads": 2,
+  "precision": "32-true",
+  "num_cues": 4,
+  "loss_scope": "response",
+  "scope": "Four-cue pipeline smoke check, not the reported study"
+}

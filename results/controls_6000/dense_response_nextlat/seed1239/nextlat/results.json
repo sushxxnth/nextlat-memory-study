@@ -1,0 +1,2724 @@
+{
+  "status": "completed",
+  "scope": "four-cue factorial delay-distribution and token-supervision controls; fixed final budget",
+  "algorithm": "nextlat",
+  "seed": 1239,
+  "steps": 6000,
+  "source_commit": "3770be6009cea2b3c455a9ce7f2ca88b504bb955",
+  "parameters": 498560,
+  "num_cues": 4,
+  "training_data_digest": "dfff776504b8e94b6f1bde54cd5a2401a40e0c2b6d3a996daf66587705be0658",
+  "predictor_hidden_width": 128,
+  "environment": {
+    "torch": "2.6.0",
+    "lightning": "2.5.1",
+    "device": "cpu"
+  },
+  "final_batch_ntp": 1.584106939844787e-05,
+  "seconds_this_session": 86.56499583299956,
+  "test": {
+    "4": {
+      "answer_accuracy": 0.97265625,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.03692330523445264,
+      "constrained_answer_accuracy": 0.97265625,
+      "latent_rollout_steps": 4.0,
+      "latent_rollout_accuracy": 1.0,
+      "latent_rollout_teacher_state_mse": 0.04595708515262231,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.042075239995028824,
+      "answer_accuracy_family_se": 0.010087879347602812,
+      "latent_rollout_accuracy_family_se": 0.0,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999995972904182,
+          "different_cue_same_tag_cosine": 0.8681387633055947,
+          "covariance_entropy_effective_rank": 3.530294366416682
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999466311977,
+          "different_cue_same_tag_cosine": 0.860786529114763,
+          "covariance_entropy_effective_rank": 3.5103645475146394
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999998751052116,
+          "different_cue_same_tag_cosine": 0.4119546948637851,
+          "covariance_entropy_effective_rank": 1.7751686749031053
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.999999778246868,
+          "different_cue_same_tag_cosine": 0.47117322514228727,
+          "covariance_entropy_effective_rank": 1.7942593656010226
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.4228515625,
+          "family_se": 0.01323511220612538
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2802734375,
+          "family_se": 0.0049500173342841266
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2548828125,
+          "family_se": 0.002148996661308186
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.888671875,
+          "family_se": 0.023127226721307823
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.90234375,
+          "family_se": 0.01844285317823244
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.892578125,
+          "family_se": 0.02050579849268766
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.9140625,
+          "family_se": 0.019299187305672972
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.31640625,
+          "family_se": 0.008539894779329987
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8994140625,
+          "family_se": 0.010716992420029658
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.984375,
+          "family_se": 0.007719674922269189
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "5": {
+      "answer_accuracy": 0.9873046875,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.02588518888416047,
+      "constrained_answer_accuracy": 0.9873046875,
+      "latent_rollout_steps": 5.0,
+      "latent_rollout_accuracy": 0.9765625,
+      "latent_rollout_teacher_state_mse": 0.055393287213519216,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.041837381140794605,
+      "answer_accuracy_family_se": 0.006769706929668457,
+      "latent_rollout_accuracy_family_se": 0.009378075283008743,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996298289298,
+          "different_cue_same_tag_cosine": 0.886319475189504,
+          "covariance_entropy_effective_rank": 3.5473638677986092
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999620014673,
+          "different_cue_same_tag_cosine": 0.8825015233509955,
+          "covariance_entropy_effective_rank": 3.506834728580604
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999297878501,
+          "different_cue_same_tag_cosine": 0.41600963635832877,
+          "covariance_entropy_effective_rank": 1.7795854273918814
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.999999790098077,
+          "different_cue_same_tag_cosine": 0.5349751108333443,
+          "covariance_entropy_effective_rank": 1.9464990349994513
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.3896484375,
+          "family_se": 0.011977025404080468
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2763671875,
+          "family_se": 0.004525230981915045
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2568359375,
+          "family_se": 0.002521969836900703
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.9453125,
+          "family_se": 0.013847603432252425
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.8994140625,
+          "family_se": 0.020707498829971627
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.86328125,
+          "family_se": 0.023342470569139878
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.84765625,
+          "family_se": 0.026341115855918876
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3154296875,
+          "family_se": 0.006644310399007929
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.888916015625,
+          "family_se": 0.011845243903321753
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.99609375,
+          "family_se": 0.00390625
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "6": {
+      "answer_accuracy": 0.984375,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.02295615116130989,
+      "constrained_answer_accuracy": 0.984375,
+      "latent_rollout_steps": 6.0,
+      "latent_rollout_accuracy": 0.98046875,
+      "latent_rollout_teacher_state_mse": 0.05749042658135295,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04426475299987942,
+      "answer_accuracy_family_se": 0.007719674922269189,
+      "latent_rollout_accuracy_family_se": 0.008595986645232744,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.999999625049005,
+          "different_cue_same_tag_cosine": 0.884500206747691,
+          "covariance_entropy_effective_rank": 3.525718997859598
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999664407658,
+          "different_cue_same_tag_cosine": 0.8779843259264879,
+          "covariance_entropy_effective_rank": 3.497026942645694
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999716099169,
+          "different_cue_same_tag_cosine": 0.389079325084275,
+          "covariance_entropy_effective_rank": 1.7261200190036425
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997885444892,
+          "different_cue_same_tag_cosine": 0.49701505417366876,
+          "covariance_entropy_effective_rank": 1.8662723005261799
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.4169921875,
+          "family_se": 0.01145661909441552
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2685546875,
+          "family_se": 0.003943557997462338
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2568359375,
+          "family_se": 0.002521969836900703
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.96875,
+          "family_se": 0.010739740572241729
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.88671875,
+          "family_se": 0.02163275865976855
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.87890625,
+          "family_se": 0.020562116130670046
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.82421875,
+          "family_se": 0.02635935447043294
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3212890625,
+          "family_se": 0.007926529264692356
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8896484375,
+          "family_se": 0.010705775573970582
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.9921875,
+          "family_se": 0.005502479644146988
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "7": {
+      "answer_accuracy": 0.9921875,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.013374163902028613,
+      "constrained_answer_accuracy": 0.9921875,
+      "latent_rollout_steps": 7.0,
+      "latent_rollout_accuracy": 0.9609375,
+      "latent_rollout_teacher_state_mse": 0.05918769212439656,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04044394654920325,
+      "answer_accuracy_family_se": 0.005502479644146988,
+      "latent_rollout_accuracy_family_se": 0.011906912930786826,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996216743581,
+          "different_cue_same_tag_cosine": 0.8826318325107618,
+          "covariance_entropy_effective_rank": 3.5131914276814253
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999697966436,
+          "different_cue_same_tag_cosine": 0.87594502776778,
+          "covariance_entropy_effective_rank": 3.4757101335617078
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999841141128,
+          "different_cue_same_tag_cosine": 0.38263499171973026,
+          "covariance_entropy_effective_rank": 1.6996616607984387
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997728363627,
+          "different_cue_same_tag_cosine": 0.5140945029719715,
+          "covariance_entropy_effective_rank": 1.9378790044380776
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.39453125,
+          "family_se": 0.011881659640574985
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2724609375,
+          "family_se": 0.004478526278908582
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2548828125,
+          "family_se": 0.002148996661308186
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.9453125,
+          "family_se": 0.013847603432252425
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.87890625,
+          "family_se": 0.02401228830931991
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.89453125,
+          "family_se": 0.021941577361568175
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.90234375,
+          "family_se": 0.02290602709874252
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.314453125,
+          "family_se": 0.007717729194469595
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.9052734375,
+          "family_se": 0.01166190228551071
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.99609375,
+          "family_se": 0.00390625
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "8": {
+      "answer_accuracy": 0.97265625,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.0327251255713179,
+      "constrained_answer_accuracy": 0.97265625,
+      "latent_rollout_steps": 8.0,
+      "latent_rollout_accuracy": 0.9453125,
+      "latent_rollout_teacher_state_mse": 0.07194188993889838,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.041145014751236886,
+      "answer_accuracy_family_se": 0.010087879347602812,
+      "latent_rollout_accuracy_family_se": 0.013847603432252425,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.999999601195694,
+          "different_cue_same_tag_cosine": 0.8926841668768284,
+          "covariance_entropy_effective_rank": 3.639211059176043
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999768120554,
+          "different_cue_same_tag_cosine": 0.8878168994863729,
+          "covariance_entropy_effective_rank": 3.6046973161691946
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999890446384,
+          "different_cue_same_tag_cosine": 0.41324557671955087,
+          "covariance_entropy_effective_rank": 1.7655402938861222
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997667337426,
+          "different_cue_same_tag_cosine": 0.5519948944043023,
+          "covariance_entropy_effective_rank": 1.9676000377311624
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.3896484375,
+          "family_se": 0.011568807280790344
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2763671875,
+          "family_se": 0.005122969531203222
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25390625,
+          "family_se": 0.0019299187305672973
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.93359375,
+          "family_se": 0.015057196715217866
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.89453125,
+          "family_se": 0.023301256728880036
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.859375,
+          "family_se": 0.022140542385542052
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.84765625,
+          "family_se": 0.02803797436660118
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3154296875,
+          "family_se": 0.007199745077591422
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8837890625,
+          "family_se": 0.012180936059692768
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.9765625,
+          "family_se": 0.009378075283008743
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "9": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.0058777497330311235,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 9.0,
+      "latent_rollout_accuracy": 0.9267578125,
+      "latent_rollout_teacher_state_mse": 0.07125153695233166,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04155158723006025,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.015595897093886871,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996618625874,
+          "different_cue_same_tag_cosine": 0.8720257686036215,
+          "covariance_entropy_effective_rank": 3.513212699508477
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999856777498,
+          "different_cue_same_tag_cosine": 0.8602194250117994,
+          "covariance_entropy_effective_rank": 3.500679991891325
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999879454705,
+          "different_cue_same_tag_cosine": 0.4075096664648382,
+          "covariance_entropy_effective_rank": 1.792788587473933
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997838767709,
+          "different_cue_same_tag_cosine": 0.5313998725213714,
+          "covariance_entropy_effective_rank": 2.037894439273403
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.396484375,
+          "family_se": 0.011855085790548076
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.28125,
+          "family_se": 0.0053698702861208645
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.9296875,
+          "family_se": 0.020553349506468265
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.89453125,
+          "family_se": 0.021941577361568175
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.8984375,
+          "family_se": 0.01949738698296225
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.88671875,
+          "family_se": 0.02233235592694016
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3125,
+          "family_se": 0.00784319756422698
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.90234375,
+          "family_se": 0.011343652387814554
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "10": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.008831453921033017,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 10.0,
+      "latent_rollout_accuracy": 0.8984375,
+      "latent_rollout_teacher_state_mse": 0.08176938723772764,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04251098242821172,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.017850275939936888,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999995833692461,
+          "different_cue_same_tag_cosine": 0.8725996319452554,
+          "covariance_entropy_effective_rank": 3.404205100122522
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999908424583,
+          "different_cue_same_tag_cosine": 0.8612489073507571,
+          "covariance_entropy_effective_rank": 3.4011203136649106
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.999999988193049,
+          "different_cue_same_tag_cosine": 0.4004332598533067,
+          "covariance_entropy_effective_rank": 1.7496906212442507
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997510755673,
+          "different_cue_same_tag_cosine": 0.5647965755178217,
+          "covariance_entropy_effective_rank": 2.0245352504287353
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.41796875,
+          "family_se": 0.01204236563414502
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2685546875,
+          "family_se": 0.004404132596927307
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2529296875,
+          "family_se": 0.0016780844644127702
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.890625,
+          "family_se": 0.024134565236880245
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.8828125,
+          "family_se": 0.020365429222854656
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.9296875,
+          "family_se": 0.015423778131202198
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.90234375,
+          "family_se": 0.02290602709874252
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3359375,
+          "family_se": 0.009065384417432433
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.9013671875,
+          "family_se": 0.010797966092690623
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "11": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.0020672958929139895,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 11.0,
+      "latent_rollout_accuracy": 0.87890625,
+      "latent_rollout_teacher_state_mse": 0.10566008777823299,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04516985244117677,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.019007495146380157,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996273615679,
+          "different_cue_same_tag_cosine": 0.8779230547879022,
+          "covariance_entropy_effective_rank": 3.5273308675527715
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999922310058,
+          "different_cue_same_tag_cosine": 0.8681693976492795,
+          "covariance_entropy_effective_rank": 3.5331900562901377
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999871144061,
+          "different_cue_same_tag_cosine": 0.36859700771108517,
+          "covariance_entropy_effective_rank": 1.6476214948684378
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997599840836,
+          "different_cue_same_tag_cosine": 0.5383852234242098,
+          "covariance_entropy_effective_rank": 2.015386613999631
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.3876953125,
+          "family_se": 0.011419854878977587
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2587890625,
+          "family_se": 0.0031567024280817835
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.251953125,
+          "family_se": 0.001375619911036747
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.91796875,
+          "family_se": 0.017341577415885826
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.83984375,
+          "family_se": 0.025374649539636016
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.861328125,
+          "family_se": 0.021976457936100615
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.8515625,
+          "family_se": 0.02900889879674177
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3369140625,
+          "family_se": 0.009150716293225525
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.86767578125,
+          "family_se": 0.011383219306252053
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "12": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.0018812211951342306,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 12.0,
+      "latent_rollout_accuracy": 0.859375,
+      "latent_rollout_teacher_state_mse": 0.11751678946893662,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.047072647779714316,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.0199481827512869,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996435023312,
+          "different_cue_same_tag_cosine": 0.8808643056905111,
+          "covariance_entropy_effective_rank": 3.52726708412531
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999928588515,
+          "different_cue_same_tag_cosine": 0.8781277239200408,
+          "covariance_entropy_effective_rank": 3.5340029651054374
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.999999988299607,
+          "different_cue_same_tag_cosine": 0.40151868186513645,
+          "covariance_entropy_effective_rank": 1.7923317609660574
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997673230592,
+          "different_cue_same_tag_cosine": 0.5843085681958358,
+          "covariance_entropy_effective_rank": 2.2297117804637065
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.3955078125,
+          "family_se": 0.011989558265149887
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.26171875,
+          "family_se": 0.0032330900463085417
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2509765625,
+          "family_se": 0.0009765625
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.91796875,
+          "family_se": 0.020585475543065637
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.89453125,
+          "family_se": 0.018931490196249446
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.875,
+          "family_se": 0.022866653849387682
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.83203125,
+          "family_se": 0.03051666306452912
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3212890625,
+          "family_se": 0.008623460380840737
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8798828125,
+          "family_se": 0.012962229451717598
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "13": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.002452862883473017,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 13.0,
+      "latent_rollout_accuracy": 0.86328125,
+      "latent_rollout_teacher_state_mse": 0.11054829799104482,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04689440567744896,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.01977578221442634,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996159963155,
+          "different_cue_same_tag_cosine": 0.8866581377921867,
+          "covariance_entropy_effective_rank": 3.601024985474928
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999936179517,
+          "different_cue_same_tag_cosine": 0.8809952057372665,
+          "covariance_entropy_effective_rank": 3.5821173071414454
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999892615685,
+          "different_cue_same_tag_cosine": 0.394026053456384,
+          "covariance_entropy_effective_rank": 1.7151364943317846
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997487563693,
+          "different_cue_same_tag_cosine": 0.5452456423496894,
+          "covariance_entropy_effective_rank": 2.120055795996671
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.408203125,
+          "family_se": 0.01212563598956573
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2568359375,
+          "family_se": 0.002521969836900703
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2509765625,
+          "family_se": 0.0009765625
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.8984375,
+          "family_se": 0.02101579994182667
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.89453125,
+          "family_se": 0.018931490196249446
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.8359375,
+          "family_se": 0.02548096341979991
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.8359375,
+          "family_se": 0.02992227412693035
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3232421875,
+          "family_se": 0.008147038147238408
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8662109375,
+          "family_se": 0.012259590956321006
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "14": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.002736568239896542,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 14.0,
+      "latent_rollout_accuracy": 0.796875,
+      "latent_rollout_teacher_state_mse": 0.14831256167963147,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.045453111350070685,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.021790472232563255,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.999999604449633,
+          "different_cue_same_tag_cosine": 0.8903264100918811,
+          "covariance_entropy_effective_rank": 3.552454988919171
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999943944392,
+          "different_cue_same_tag_cosine": 0.8865400183213287,
+          "covariance_entropy_effective_rank": 3.5554862756058947
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999890718915,
+          "different_cue_same_tag_cosine": 0.41017060609200173,
+          "covariance_entropy_effective_rank": 1.7842852002000544
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997320671907,
+          "different_cue_same_tag_cosine": 0.654978116563502,
+          "covariance_entropy_effective_rank": 2.2981312032535306
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.408203125,
+          "family_se": 0.011219848919019587
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2548828125,
+          "family_se": 0.002148996661308186
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.875,
+          "family_se": 0.0254148648300696
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.9296875,
+          "family_se": 0.019790965158862042
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.84375,
+          "family_se": 0.02814276560513397
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.84765625,
+          "family_se": 0.02911432215617738
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3173828125,
+          "family_se": 0.008191160982718012
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.99609375,
+          "family_se": 0.00390625
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.8740234375,
+          "family_se": 0.01289485351413702
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.9990234375,
+          "family_se": 0.0009765625
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "15": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.001725090580464439,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 15.0,
+      "latent_rollout_accuracy": 0.80859375,
+      "latent_rollout_teacher_state_mse": 0.1476533894892782,
+      "latent_one_step_accuracy": 1.0,
+      "latent_one_step_teacher_state_mse": 0.04651738342363387,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.02156600789536197,
+      "latent_one_step_accuracy_family_se": 0.0,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.999999600752616,
+          "different_cue_same_tag_cosine": 0.8799167877310343,
+          "covariance_entropy_effective_rank": 3.516778160694771
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999924154256,
+          "different_cue_same_tag_cosine": 0.8803584317588586,
+          "covariance_entropy_effective_rank": 3.600823460475258
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999999662066376,
+          "different_cue_same_tag_cosine": 0.40237858273300847,
+          "covariance_entropy_effective_rank": 1.777305833729199
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.999999721578264,
+          "different_cue_same_tag_cosine": 0.6344150034456527,
+          "covariance_entropy_effective_rank": 2.263076992357392
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.4169921875,
+          "family_se": 0.012109213768135415
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2578125,
+          "family_se": 0.0026849351430604323
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.2509765625,
+          "family_se": 0.0009765625
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.875,
+          "family_se": 0.0254148648300696
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.8984375,
+          "family_se": 0.022431665012352022
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.8515625,
+          "family_se": 0.026224546503626447
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.8671875,
+          "family_se": 0.025100912842789973
+        },
+        "latent_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.3203125,
+          "family_se": 0.008290031649754842
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.873046875,
+          "family_se": 0.013225179449755053
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "16": {
+      "answer_accuracy": 1.0,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 0.0062854425930254365,
+      "constrained_answer_accuracy": 1.0,
+      "latent_rollout_steps": 16.0,
+      "latent_rollout_accuracy": 0.85546875,
+      "latent_rollout_teacher_state_mse": 0.148764195619151,
+      "latent_one_step_accuracy": 0.99609375,
+      "latent_one_step_teacher_state_mse": 0.05461598455440253,
+      "answer_accuracy_family_se": 0.0,
+      "latent_rollout_accuracy_family_se": 0.02011313332313767,
+      "latent_one_step_accuracy_family_se": 0.00390625,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999995570624426,
+          "different_cue_same_tag_cosine": 0.8767180379278771,
+          "covariance_entropy_effective_rank": 3.502559554790766
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999999814046955,
+          "different_cue_same_tag_cosine": 0.88134290685855,
+          "covariance_entropy_effective_rank": 3.6395786447814324
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999985191030006,
+          "different_cue_same_tag_cosine": 0.4803205226117666,
+          "covariance_entropy_effective_rank": 1.9605210670720588
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999997053074406,
+          "different_cue_same_tag_cosine": 0.650140930612662,
+          "covariance_entropy_effective_rank": 2.538368228836348
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.396484375,
+          "family_se": 0.01144251823119953
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.2548828125,
+          "family_se": 0.002148996661308186
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/cue": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25390625,
+          "family_se": 0.0019299187305672973
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.8505859375,
+          "family_se": 0.023896771227848144
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.90625,
+          "family_se": 0.021299733372328475
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.8203125,
+          "family_se": 0.02813422584902623
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.87109375,
+          "family_se": 0.02615803029482571
+        },
+        "latent_query/cue": {
+          "accuracy": 0.99609375,
+          "family_se": 0.00390625
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.31640625,
+          "family_se": 0.008077148899091223
+        },
+        "latent_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.99609375,
+          "family_se": 0.00390625
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.862060546875,
+          "family_se": 0.012389200358000771
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.953125,
+          "family_se": 0.012932360185234167
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.9990234375,
+          "family_se": 0.0009765625
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        }
+      },
+      "in_training_delays": true
+    },
+    "24": {
+      "answer_accuracy": 0.65625,
+      "non_answer_token_rate": 0.171875,
+      "answer_ce": 2.6466263998299837,
+      "constrained_answer_accuracy": 0.7763671875,
+      "latent_rollout_steps": 24.0,
+      "latent_rollout_accuracy": 0.80859375,
+      "latent_rollout_teacher_state_mse": 0.4068553992547095,
+      "latent_one_step_accuracy": 0.890625,
+      "latent_one_step_teacher_state_mse": 0.22576539078727365,
+      "answer_accuracy_family_se": 0.030753936755873252,
+      "latent_rollout_accuracy_family_se": 0.02156600789536197,
+      "latent_one_step_accuracy_family_se": 0.018341598813823294,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996257258909,
+          "different_cue_same_tag_cosine": 0.8807507214963284,
+          "covariance_entropy_effective_rank": 3.558600540229638
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999992999915586,
+          "different_cue_same_tag_cosine": 0.9269800262368609,
+          "covariance_entropy_effective_rank": 3.343553799499404
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999977730156635,
+          "different_cue_same_tag_cosine": 0.6954193229621944,
+          "covariance_entropy_effective_rank": 3.041339099451977
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999995461184211,
+          "different_cue_same_tag_cosine": 0.6994141626346373,
+          "covariance_entropy_effective_rank": 2.8490193404791797
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.408203125,
+          "family_se": 0.011885451054692834
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 0.9580078125,
+          "family_se": 0.012188331518644565
+        },
+        "before_query/bit_2": {
+          "accuracy": 0.9697265625,
+          "family_se": 0.010444463851870062
+        },
+        "before_query/bit_3": {
+          "accuracy": 0.8017578125,
+          "family_se": 0.024938691424812302
+        },
+        "at_query/cue": {
+          "accuracy": 0.7265625,
+          "family_se": 0.02208620968429178
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.71484375,
+          "family_se": 0.033129314526437664
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.6796875,
+          "family_se": 0.03074612226286033
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.53125,
+          "family_se": 0.029736995106310855
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.5224609375,
+          "family_se": 0.034199893844417954
+        },
+        "latent_query/cue": {
+          "accuracy": 0.8515625,
+          "family_se": 0.023107086991702913
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.28515625,
+          "family_se": 0.006344254227274888
+        },
+        "latent_query/bit_0": {
+          "accuracy": 0.984375,
+          "family_se": 0.007719674922269189
+        },
+        "latent_query/bit_1": {
+          "accuracy": 0.98046875,
+          "family_se": 0.008595986645232744
+        },
+        "latent_query/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.9873046875,
+          "family_se": 0.006769706929668457
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 0.932373046875,
+          "family_se": 0.007252451198240268
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 0.8984375,
+          "family_se": 0.017850275939936888
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.612060546875,
+          "family_se": 0.015607794352220246
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.6318359375,
+          "family_se": 0.02583901358792203
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.988037109375,
+          "family_se": 0.0032353393041224445
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 0.9599609375,
+          "family_se": 0.011921724293527121
+        }
+      },
+      "in_training_delays": false
+    },
+    "32": {
+      "answer_accuracy": 0.78125,
+      "non_answer_token_rate": 0.09375,
+      "answer_ce": 2.2015583631257414,
+      "constrained_answer_accuracy": 0.8125,
+      "latent_rollout_steps": 32.0,
+      "latent_rollout_accuracy": 0.6796875,
+      "latent_rollout_teacher_state_mse": 0.4896316104568541,
+      "latent_one_step_accuracy": 0.921875,
+      "latent_one_step_teacher_state_mse": 0.17268557439092547,
+      "answer_accuracy_family_se": 0.027027754399394997,
+      "latent_rollout_accuracy_family_se": 0.024004781732267,
+      "latent_one_step_accuracy_family_se": 0.016109610858362596,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996405882646,
+          "different_cue_same_tag_cosine": 0.8829393679106812,
+          "covariance_entropy_effective_rank": 3.5991496108751315
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999998689522295,
+          "different_cue_same_tag_cosine": 0.9086861212234706,
+          "covariance_entropy_effective_rank": 3.2518420388307683
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999989635750786,
+          "different_cue_same_tag_cosine": 0.6411538380917455,
+          "covariance_entropy_effective_rank": 2.5786082726048343
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999994845806229,
+          "different_cue_same_tag_cosine": 0.7748149792554604,
+          "covariance_entropy_effective_rank": 3.1127659448664904
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.3935546875,
+          "family_se": 0.012014584766869557
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 0.96484375,
+          "family_se": 0.011343652387814554
+        },
+        "before_query/bit_2": {
+          "accuracy": 0.98046875,
+          "family_se": 0.008595986645232744
+        },
+        "before_query/bit_3": {
+          "accuracy": 0.71484375,
+          "family_se": 0.02810645372212854
+        },
+        "at_query/cue": {
+          "accuracy": 0.8115234375,
+          "family_se": 0.02134463631949914
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.81640625,
+          "family_se": 0.028208861058399825
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.765625,
+          "family_se": 0.029313786949402502
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.52734375,
+          "family_se": 0.033418185950938095
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.546875,
+          "family_se": 0.03779310485533438
+        },
+        "latent_query/cue": {
+          "accuracy": 0.734375,
+          "family_se": 0.022824580853582663
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.2685546875,
+          "family_se": 0.004617223305981845
+        },
+        "latent_query/bit_0": {
+          "accuracy": 0.953125,
+          "family_se": 0.012932360185234167
+        },
+        "latent_query/bit_1": {
+          "accuracy": 0.84765625,
+          "family_se": 0.02575066038996268
+        },
+        "latent_query/bit_2": {
+          "accuracy": 0.8916015625,
+          "family_se": 0.018203310800372265
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.9580078125,
+          "family_se": 0.01449383224823168
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 0.9150390625,
+          "family_se": 0.00853945511115561
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 0.9375,
+          "family_se": 0.014673279051058636
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.6640625,
+          "family_se": 0.01621368879923216
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.65234375,
+          "family_se": 0.030658071965812286
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.91259765625,
+          "family_se": 0.008464712258002759
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 0.94140625,
+          "family_se": 0.01427062603423398
+        }
+      },
+      "in_training_delays": false
+    },
+    "48": {
+      "answer_accuracy": 0.62890625,
+      "non_answer_token_rate": 0.19921875,
+      "answer_ce": 3.595540240406912,
+      "constrained_answer_accuracy": 0.71484375,
+      "latent_rollout_steps": 48.0,
+      "latent_rollout_accuracy": 0.64453125,
+      "latent_rollout_teacher_state_mse": 0.6529923127964139,
+      "latent_one_step_accuracy": 0.8828125,
+      "latent_one_step_teacher_state_mse": 0.25737027591094375,
+      "answer_accuracy_family_se": 0.03429822930060659,
+      "latent_rollout_accuracy_family_se": 0.026102854215890706,
+      "latent_one_step_accuracy_family_se": 0.018794546001423027,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996109246573,
+          "different_cue_same_tag_cosine": 0.8788490715834668,
+          "covariance_entropy_effective_rank": 3.617802936096992
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999998387955467,
+          "different_cue_same_tag_cosine": 0.9163510384900173,
+          "covariance_entropy_effective_rank": 3.175807263635228
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.999999664992672,
+          "different_cue_same_tag_cosine": 0.6711431731585245,
+          "covariance_entropy_effective_rank": 2.8176604616377454
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999980815390708,
+          "different_cue_same_tag_cosine": 0.7768765653788123,
+          "covariance_entropy_effective_rank": 4.252309229246765
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.4296875,
+          "family_se": 0.01245917916330078
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 0.94140625,
+          "family_se": 0.01427062603423398
+        },
+        "before_query/bit_2": {
+          "accuracy": 0.96484375,
+          "family_se": 0.011343652387814554
+        },
+        "before_query/bit_3": {
+          "accuracy": 0.72265625,
+          "family_se": 0.027061074018867502
+        },
+        "at_query/cue": {
+          "accuracy": 0.734375,
+          "family_se": 0.02476358441722394
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.74609375,
+          "family_se": 0.0332740637226888
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.765625,
+          "family_se": 0.0327811412770391
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.56640625,
+          "family_se": 0.03735663777053809
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.52734375,
+          "family_se": 0.03248475649008286
+        },
+        "latent_query/cue": {
+          "accuracy": 0.5390625,
+          "family_se": 0.02119795546034614
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.259765625,
+          "family_se": 0.0029767282326967066
+        },
+        "latent_query/bit_0": {
+          "accuracy": 0.84765625,
+          "family_se": 0.02452714338213272
+        },
+        "latent_query/bit_1": {
+          "accuracy": 0.76171875,
+          "family_se": 0.02599215067742742
+        },
+        "latent_query/bit_2": {
+          "accuracy": 0.7421875,
+          "family_se": 0.02716078762842596
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.8203125,
+          "family_se": 0.025253619424654268
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 0.9072265625,
+          "family_se": 0.009117832470068367
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 0.8984375,
+          "family_se": 0.017850275939936888
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.6513671875,
+          "family_se": 0.01853200994509333
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.671875,
+          "family_se": 0.03158652463291628
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.79296875,
+          "family_se": 0.012588690954516547
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 0.76171875,
+          "family_se": 0.022159527358308034
+        }
+      },
+      "in_training_delays": false
+    },
+    "64": {
+      "answer_accuracy": 0.7734375,
+      "non_answer_token_rate": 0.0,
+      "answer_ce": 1.860594747849973,
+      "constrained_answer_accuracy": 0.7734375,
+      "latent_rollout_steps": 64.0,
+      "latent_rollout_accuracy": 0.60546875,
+      "latent_rollout_teacher_state_mse": 0.7355529982596636,
+      "latent_one_step_accuracy": 0.9140625,
+      "latent_one_step_teacher_state_mse": 0.09951593517325819,
+      "answer_accuracy_family_se": 0.023437499999999997,
+      "latent_rollout_accuracy_family_se": 0.026395793892662466,
+      "latent_one_step_accuracy_family_se": 0.016738727807459105,
+      "geometry": {
+        "anchor": {
+          "same_cue_different_tag_cosine": 0.9999996058192212,
+          "different_cue_same_tag_cosine": 0.8728071133813952,
+          "covariance_entropy_effective_rank": 3.496608761805176
+        },
+        "before_query": {
+          "same_cue_different_tag_cosine": 0.9999998692965383,
+          "different_cue_same_tag_cosine": 0.9232392259659555,
+          "covariance_entropy_effective_rank": 3.424937377987663
+        },
+        "at_query": {
+          "same_cue_different_tag_cosine": 0.9999995519524987,
+          "different_cue_same_tag_cosine": 0.6823046262809771,
+          "covariance_entropy_effective_rank": 2.252126815358184
+        },
+        "latent_query": {
+          "same_cue_different_tag_cosine": 0.9999977826374656,
+          "different_cue_same_tag_cosine": 0.778433319313794,
+          "covariance_entropy_effective_rank": 4.190349979773432
+        }
+      },
+      "probes": {
+        "anchor/nuisance": {
+          "accuracy": 0.408203125,
+          "family_se": 0.012744017622371909
+        },
+        "anchor/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_1": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_2": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/bit_3": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "before_query/bit_0": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/bit_1": {
+          "accuracy": 0.984375,
+          "family_se": 0.007719674922269189
+        },
+        "before_query/bit_2": {
+          "accuracy": 0.8828125,
+          "family_se": 0.018640489747365905
+        },
+        "before_query/bit_3": {
+          "accuracy": 0.6640625,
+          "family_se": 0.033326380047004826
+        },
+        "at_query/cue": {
+          "accuracy": 0.76953125,
+          "family_se": 0.022116109188047028
+        },
+        "at_query/nuisance": {
+          "accuracy": 0.25,
+          "family_se": 0.0
+        },
+        "at_query/bit_0": {
+          "accuracy": 0.81640625,
+          "family_se": 0.02927892740937759
+        },
+        "at_query/bit_1": {
+          "accuracy": 0.7109375,
+          "family_se": 0.02806581425635193
+        },
+        "at_query/bit_2": {
+          "accuracy": 0.65234375,
+          "family_se": 0.03443806569461922
+        },
+        "at_query/bit_3": {
+          "accuracy": 0.58984375,
+          "family_se": 0.030595304254230852
+        },
+        "latent_query/cue": {
+          "accuracy": 0.55078125,
+          "family_se": 0.019083197384836787
+        },
+        "latent_query/nuisance": {
+          "accuracy": 0.2548828125,
+          "family_se": 0.002148996661308186
+        },
+        "latent_query/bit_0": {
+          "accuracy": 0.73828125,
+          "family_se": 0.026577241596031715
+        },
+        "latent_query/bit_1": {
+          "accuracy": 0.6875,
+          "family_se": 0.03281044941099072
+        },
+        "latent_query/bit_2": {
+          "accuracy": 0.65234375,
+          "family_se": 0.02911432215617738
+        },
+        "latent_query/bit_3": {
+          "accuracy": 0.70703125,
+          "family_se": 0.030642392091642143
+        },
+        "anchor/stored_bits_mean": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "anchor/selected_bit_given_query": {
+          "accuracy": 1.0,
+          "family_se": 0.0
+        },
+        "before_query/stored_bits_mean": {
+          "accuracy": 0.8828125,
+          "family_se": 0.008965432251443124
+        },
+        "before_query/selected_bit_given_query": {
+          "accuracy": 0.89453125,
+          "family_se": 0.01810092392766018
+        },
+        "at_query/stored_bits_mean": {
+          "accuracy": 0.6923828125,
+          "family_se": 0.01686186832711673
+        },
+        "at_query/selected_bit_given_query": {
+          "accuracy": 0.70703125,
+          "family_se": 0.026900763464773575
+        },
+        "latent_query/stored_bits_mean": {
+          "accuracy": 0.6962890625,
+          "family_se": 0.013203301083104593
+        },
+        "latent_query/selected_bit_given_query": {
+          "accuracy": 0.68359375,
+          "family_se": 0.021386987353034972
+        }
+      },
+      "in_training_delays": false
+    }
+  }
+}

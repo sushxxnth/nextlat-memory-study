@@ -1,0 +1,23 @@
+{
+  "seed": 1234,
+  "num_paths": 5,
+  "path_length": 5,
+  "max_nodes": 100,
+  "train_examples": 4096,
+  "validation_examples": 256,
+  "test_examples": 512,
+  "layers": 2,
+  "heads": 4,
+  "width": 128,
+  "batch_size": 32,
+  "steps": 300,
+  "eval_every": 100,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.1,
+  "grad_clip": 100,
+  "horizon": 3,
+  "lambda_mse": 1.0,
+  "lambda_kl": 1.0,
+  "proj_factor": 0.5,
+  "threads": 4
+}

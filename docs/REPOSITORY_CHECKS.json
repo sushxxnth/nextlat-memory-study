@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-15",
+  "tests_passed": 30,
+  "test_command": "python -m unittest test_validation memory.test_memory memory.test_controls memory.test_published_probes -v",
+  "evidence_files_hash_verified": 457,
+  "recomputed_probe_aggregates": 704,
+  "independent_training_models": 24,
+  "baseline_records_verified": 2,
+  "upstream_commit": "3770be6009cea2b3c455a9ce7f2ca88b504bb955",
+  "scope": "Tests run from the new repository using the existing Python 3.12 project environment. Recorded metrics were checked offline; no new inference or training result is claimed."
+}

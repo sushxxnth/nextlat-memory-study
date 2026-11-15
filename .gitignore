@@ -1,0 +1,32 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Generated data, checkpoints, fitted objects and fresh experiment runs
+/datasets/
+/runs/
+/reproduction/
+/memory/runs/
+/memory/probes_midterm_reproduction/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.pickle
+*.zip
+
+# Local machine or cluster configuration
+.ssh/
+*.key
+*.pem

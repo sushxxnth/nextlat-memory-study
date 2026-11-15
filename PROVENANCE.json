@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/JaydenTeoh/NextLat",
+  "commit": "3770be6009cea2b3c455a9ce7f2ca88b504bb955",
+  "paper": "https://arxiv.org/abs/2511.05963v4",
+  "sha256": {
+    "data/stargraph/prepare.py": "1d3aaad44bc28be70e15e08433890f7f72a534d81ba77a250e8ba62390d98bab",
+    "data/stargraph.py": "2f61294d6f6fbbf7a15bb3fc311212905ff38ec5e0b5b37608e03c456ced86d1",
+    "models/model_gpt.py": "b5149356b615753f11a8cfbfba66a6d12a20f3c851015ae98227a2703099b21f",
+    "models/model_nextlat.py": "bd324f6c8ac21b7a475adfcf8ccde7724cfe5af607ff1f281cbd7c3fd877c096",
+    "models/model_base.py": "e2645ed8e4d83de4daf9a3759b91537ed9c4216d4a189a9723d6d8cdd14ba34a",
+    "config/stargraph/5_5/gpt_stargraph_5_5.yaml": "82b31f83f2a9b76077bfbf3d9fd7ec7ae467012161477527c7b2d8db01392cb7",
+    "config/stargraph/5_5/nextlat_stargraph_5_5.yaml": "6d98ffc681d6574640806f4c5224de466d09b1dc4f9e1e56e2fa6bdf6572a58d",
+    "LICENSE": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+  }
+}

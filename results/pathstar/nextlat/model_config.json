@@ -1,0 +1,18 @@
+{
+  "block_size": 69,
+  "vocab_size": 106,
+  "n_layer": 12,
+  "n_head": 6,
+  "n_embd": 384,
+  "dropout": 0.0,
+  "bias": false,
+  "context_length": 62,
+  "eos_token_id": 104,
+  "compute_hidden_state_rank": false,
+  "use_fused": false,
+  "lambda_kl": 1.0,
+  "lambda_mse": 1.0,
+  "lambda_ce": 0.0,
+  "mtp_horizon": 3,
+  "proj_factor": 0.5
+}

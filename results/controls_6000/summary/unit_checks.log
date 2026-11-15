@@ -1,0 +1,34 @@
+/Users/sushanth.c/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/work/nextlat-venv/lib/python3.12/site-packages/torch/utils/_pytree.py:185: FutureWarning: optree is installed but the version is too old to support PyTorch Dynamo in C++ pytree. C++ pytree support is disabled. Please consider upgrading optree using `python3 -m pip install --upgrade 'optree>=0.13.0'`.
+  warnings.warn(
+test_context_restores_even_on_failure (memory.test_controls.ControlChecks.test_context_restores_even_on_failure) ... ok
+test_continuation_matches_uninterrupted_training_exactly (memory.test_controls.ControlChecks.test_continuation_matches_uninterrupted_training_exactly) ... ok
+test_full_scope_preserves_legacy_loss_and_invalid_scopes_reject (memory.test_controls.ControlChecks.test_full_scope_preserves_legacy_loss_and_invalid_scopes_reject) ... ok
+test_kl_mask_excludes_prompt_but_latent_loss_keeps_context (memory.test_controls.ControlChecks.test_kl_mask_excludes_prompt_but_latent_loss_keeps_context) ... ok
+test_plan_is_crossed_and_probe_data_is_identical (memory.test_controls.ControlChecks.test_plan_is_crossed_and_probe_data_is_identical) ... ok
+test_response_ntp_is_exactly_answer_and_eos (memory.test_controls.ControlChecks.test_response_ntp_is_exactly_answer_and_eos) ... ok
+test_zero_auxiliary_response_gradients_match_ntp (memory.test_controls.ControlChecks.test_zero_auxiliary_response_gradients_match_ntp) ... ok
+test_attention_only_used_once_for_latent_observation (memory.test_memory.MemoryChecks.test_attention_only_used_once_for_latent_observation) ... ok
+test_collapsed_geometry_is_finite (memory.test_memory.MemoryChecks.test_collapsed_geometry_is_finite) ... ok
+test_degenerate_predictor_is_rejected (memory.test_memory.MemoryChecks.test_degenerate_predictor_is_rejected) ... ok
+test_family_balance_and_split_separation (memory.test_memory.MemoryChecks.test_family_balance_and_split_separation) ... ok
+test_future_answer_cannot_change_features_or_rollouts (memory.test_memory.MemoryChecks.test_future_answer_cannot_change_features_or_rollouts) ... ok
+test_multicue_counterfactuals_and_query_targets (memory.test_memory.MemoryChecks.test_multicue_counterfactuals_and_query_targets) ... ok
+test_multicue_no_answer_leak_and_no_attention_in_rollout (memory.test_memory.MemoryChecks.test_multicue_no_answer_leak_and_no_attention_in_rollout) ... ok
+test_multicue_split_separation (memory.test_memory.MemoryChecks.test_multicue_split_separation) ... ok
+test_multicue_zero_auxiliary_gradients (memory.test_memory.MemoryChecks.test_multicue_zero_auxiliary_gradients) ... ok
+test_prequery_multicue_probe_does_not_require_unknown_query (memory.test_memory.MemoryChecks.test_prequery_multicue_probe_does_not_require_unknown_query) ... ok
+test_shared_initialization_and_zero_auxiliary_gradients (memory.test_memory.MemoryChecks.test_shared_initialization_and_zero_auxiliary_gradients) ... ok
+test_sweep_conditions_are_unique_and_match_planned_widths (memory.test_memory.MemoryChecks.test_sweep_conditions_are_unique_and_match_planned_widths) ... ok
+test_auxiliary_targets_and_head_are_detached (test_validation.ValidationTests.test_auxiliary_targets_and_head_are_detached) ... ok
+test_causal_attention (test_validation.ValidationTests.test_causal_attention) ... ok
+test_microbatches_preserve_effective_batch_gradients (test_validation.ValidationTests.test_microbatches_preserve_effective_batch_gradients) ... ok
+test_nextlat_updates_dynamics_and_trunk (test_validation.ValidationTests.test_nextlat_updates_dynamics_and_trunk) ... ok
+test_official_checkout_pinned_and_unmodified (test_validation.ValidationTests.test_official_checkout_pinned_and_unmodified) ... ok
+test_official_graphs_and_tokenization (test_validation.ValidationTests.test_official_graphs_and_tokenization) ... ok
+test_prompt_is_masked_from_ntp_loss (test_validation.ValidationTests.test_prompt_is_masked_from_ntp_loss) ... ok
+test_zero_auxiliary_matches_gpt_loss_and_gradients (test_validation.ValidationTests.test_zero_auxiliary_matches_gpt_loss_and_gradients) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 2.194s
+
+OK
