@@ -1,0 +1,32 @@
+{
+  "scope": "Exploratory frozen full-vocabulary head intervention on existing CPU checkpoints; no backbone training; previously viewed test families. Same head fitting procedure as the new GPU follow-up.",
+  "source": "/Users/sushanth.c/Documents/Codex/2026-10-23/referenced-chatgpt-conversation-this-is-an/outputs/nextlat-published/memory/runs/controls_v3_6000",
+  "source_plan_sha256": "881ae14124b011df2f47cc5cd464524fe992c9bedb6c9f24a6ca03f28cc1ef5c",
+  "method_source_sha256": "94a98fb71a28b3e914dd844b27a1f5575fe746b708ac8f5a88920681670676a1",
+  "entries": [
+    "sparse_full_gpt/seed1237/gpt",
+    "sparse_full_gpt/seed1238/gpt",
+    "sparse_full_gpt/seed1239/gpt",
+    "sparse_full_nextlat/seed1237/nextlat",
+    "sparse_full_nextlat/seed1238/nextlat",
+    "sparse_full_nextlat/seed1239/nextlat",
+    "sparse_response_gpt/seed1237/gpt",
+    "sparse_response_gpt/seed1238/gpt",
+    "sparse_response_gpt/seed1239/gpt",
+    "sparse_response_nextlat/seed1237/nextlat",
+    "sparse_response_nextlat/seed1238/nextlat",
+    "sparse_response_nextlat/seed1239/nextlat",
+    "dense_full_gpt/seed1237/gpt",
+    "dense_full_gpt/seed1238/gpt",
+    "dense_full_gpt/seed1239/gpt",
+    "dense_full_nextlat/seed1237/nextlat",
+    "dense_full_nextlat/seed1238/nextlat",
+    "dense_full_nextlat/seed1239/nextlat",
+    "dense_response_gpt/seed1237/gpt",
+    "dense_response_gpt/seed1238/gpt",
+    "dense_response_gpt/seed1239/gpt",
+    "dense_response_nextlat/seed1237/nextlat",
+    "dense_response_nextlat/seed1238/nextlat",
+    "dense_response_nextlat/seed1239/nextlat"
+  ]
+}

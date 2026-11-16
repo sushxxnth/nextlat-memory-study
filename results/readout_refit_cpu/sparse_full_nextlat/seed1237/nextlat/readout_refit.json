@@ -1,0 +1,264 @@
+{
+  "scope": "Frozen Transformer; refit native bias-free, full-vocabulary head on separate probe families. No forced-choice evaluation.",
+  "checkpoint_sha256": "a59944601ea083c9ece95bd4a118cc7ee28e7e312c3ea32fd7302ef0321bf9d2",
+  "fitting_delays": [
+    4,
+    8,
+    16
+  ],
+  "fitting_examples": 3072,
+  "output_classes": 24,
+  "regularization": "sum((W-W_native)^2)/(2*N)",
+  "optimizer": {
+    "objective": 3.281062004224691e-05,
+    "gradient_max": 3.1654137448449756e-08,
+    "closure_calls": 13,
+    "max_iterations": 300,
+    "training": {
+      "accuracy": 1.0,
+      "non_answer_rate": 0.0,
+      "restricted_accuracy": 1.0,
+      "correct_given_answer_token": 1.0
+    }
+  },
+  "test": {
+    "4": {
+      "native_cpu_redecode": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      },
+      "refitted": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      }
+    },
+    "5": {
+      "native_cpu_redecode": {
+        "accuracy": 0.5,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.5,
+        "correct_given_answer_token": 0.5
+      },
+      "refitted": {
+        "accuracy": 0.5,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.5,
+        "correct_given_answer_token": 0.5
+      }
+    },
+    "6": {
+      "native_cpu_redecode": {
+        "accuracy": 0.50390625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.50390625,
+        "correct_given_answer_token": 0.50390625
+      },
+      "refitted": {
+        "accuracy": 0.50390625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.50390625,
+        "correct_given_answer_token": 0.50390625
+      }
+    },
+    "7": {
+      "native_cpu_redecode": {
+        "accuracy": 0.53515625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.53515625,
+        "correct_given_answer_token": 0.53515625
+      },
+      "refitted": {
+        "accuracy": 0.5390625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.5390625,
+        "correct_given_answer_token": 0.5390625
+      }
+    },
+    "8": {
+      "native_cpu_redecode": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      },
+      "refitted": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      }
+    },
+    "9": {
+      "native_cpu_redecode": {
+        "accuracy": 0.6640625,
+        "non_answer_rate": 0.080078125,
+        "restricted_accuracy": 0.740234375,
+        "correct_given_answer_token": 0.721868365180467
+      },
+      "refitted": {
+        "accuracy": 0.6611328125,
+        "non_answer_rate": 0.072265625,
+        "restricted_accuracy": 0.6982421875,
+        "correct_given_answer_token": 0.7126315789473684
+      }
+    },
+    "10": {
+      "native_cpu_redecode": {
+        "accuracy": 0.5546875,
+        "non_answer_rate": 0.1171875,
+        "restricted_accuracy": 0.6328125,
+        "correct_given_answer_token": 0.6283185840707964
+      },
+      "refitted": {
+        "accuracy": 0.5546875,
+        "non_answer_rate": 0.1171875,
+        "restricted_accuracy": 0.6328125,
+        "correct_given_answer_token": 0.6283185840707964
+      }
+    },
+    "11": {
+      "native_cpu_redecode": {
+        "accuracy": 0.4609375,
+        "non_answer_rate": 0.12109375,
+        "restricted_accuracy": 0.525390625,
+        "correct_given_answer_token": 0.5244444444444445
+      },
+      "refitted": {
+        "accuracy": 0.4501953125,
+        "non_answer_rate": 0.1171875,
+        "restricted_accuracy": 0.5126953125,
+        "correct_given_answer_token": 0.5099557522123894
+      }
+    },
+    "12": {
+      "native_cpu_redecode": {
+        "accuracy": 0.4453125,
+        "non_answer_rate": 0.0234375,
+        "restricted_accuracy": 0.46484375,
+        "correct_given_answer_token": 0.456
+      },
+      "refitted": {
+        "accuracy": 0.46875,
+        "non_answer_rate": 0.00390625,
+        "restricted_accuracy": 0.47265625,
+        "correct_given_answer_token": 0.47058823529411764
+      }
+    },
+    "13": {
+      "native_cpu_redecode": {
+        "accuracy": 0.40625,
+        "non_answer_rate": 0.11328125,
+        "restricted_accuracy": 0.4765625,
+        "correct_given_answer_token": 0.4581497797356828
+      },
+      "refitted": {
+        "accuracy": 0.416015625,
+        "non_answer_rate": 0.111328125,
+        "restricted_accuracy": 0.48046875,
+        "correct_given_answer_token": 0.46813186813186813
+      }
+    },
+    "14": {
+      "native_cpu_redecode": {
+        "accuracy": 0.478515625,
+        "non_answer_rate": 0.052734375,
+        "restricted_accuracy": 0.51171875,
+        "correct_given_answer_token": 0.5051546391752577
+      },
+      "refitted": {
+        "accuracy": 0.4990234375,
+        "non_answer_rate": 0.0322265625,
+        "restricted_accuracy": 0.5234375,
+        "correct_given_answer_token": 0.515640766902119
+      }
+    },
+    "15": {
+      "native_cpu_redecode": {
+        "accuracy": 0.72265625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.72265625,
+        "correct_given_answer_token": 0.72265625
+      },
+      "refitted": {
+        "accuracy": 0.72265625,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.72265625,
+        "correct_given_answer_token": 0.72265625
+      }
+    },
+    "16": {
+      "native_cpu_redecode": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      },
+      "refitted": {
+        "accuracy": 1.0,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 1.0,
+        "correct_given_answer_token": 1.0
+      }
+    },
+    "24": {
+      "native_cpu_redecode": {
+        "accuracy": 0.49609375,
+        "non_answer_rate": 0.01171875,
+        "restricted_accuracy": 0.50390625,
+        "correct_given_answer_token": 0.5019762845849802
+      },
+      "refitted": {
+        "accuracy": 0.5078125,
+        "non_answer_rate": 0.0,
+        "restricted_accuracy": 0.5078125,
+        "correct_given_answer_token": 0.5078125
+      }
+    },
+    "32": {
+      "native_cpu_redecode": {
+        "accuracy": 0.279296875,
+        "non_answer_rate": 0.2900390625,
+        "restricted_accuracy": 0.5,
+        "correct_given_answer_token": 0.39339752407152684
+      },
+      "refitted": {
+        "accuracy": 0.4130859375,
+        "non_answer_rate": 0.0908203125,
+        "restricted_accuracy": 0.5,
+        "correct_given_answer_token": 0.45435016111707843
+      }
+    },
+    "48": {
+      "native_cpu_redecode": {
+        "accuracy": 0.01171875,
+        "non_answer_rate": 0.98828125,
+        "restricted_accuracy": 0.58203125,
+        "correct_given_answer_token": 1.0
+      },
+      "refitted": {
+        "accuracy": 0.10546875,
+        "non_answer_rate": 0.89453125,
+        "restricted_accuracy": 0.5234375,
+        "correct_given_answer_token": 1.0
+      }
+    },
+    "64": {
+      "native_cpu_redecode": {
+        "accuracy": 0.0,
+        "non_answer_rate": 1.0,
+        "restricted_accuracy": 0.55078125,
+        "correct_given_answer_token": null
+      },
+      "refitted": {
+        "accuracy": 0.0,
+        "non_answer_rate": 1.0,
+        "restricted_accuracy": 0.546875,
+        "correct_given_answer_token": null
+      }
+    }
+  }
+}

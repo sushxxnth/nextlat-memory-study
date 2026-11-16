@@ -1,0 +1,9 @@
+{
+  "scope": "New exploratory output-head-only intervention on existing 6000-update CPU models, not new GPU training.",
+  "models": 24,
+  "checkpoint_hashes_unchanged": true,
+  "native_head_delay64_matches_original_all_models": true,
+  "training_and_test_families_disjoint": true,
+  "main_caveat": "Short-delay head fitting may itself fail under length shift. At-query states have already used attention. Failed readout refits do not prove erasure.",
+  "raw_checkpoint_and_feature_arrays_in_git": false
+}

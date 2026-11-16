@@ -1,0 +1,202 @@
+[
+  {
+    "condition": "dense_full_gpt",
+    "seeds": 3,
+    "passed_learning_gate": 2,
+    "native": {
+      "mean": 0.18229166666666666,
+      "sd": 0.19661027175184245
+    },
+    "refitted": {
+      "mean": 0.2662760416666667,
+      "sd": 0.31717892088664673
+    },
+    "native_non_answer": {
+      "mean": 0.66015625,
+      "sd": 0.35871627808626483
+    },
+    "refitted_non_answer": {
+      "mean": 0.5475260416666666,
+      "sd": 0.5067308693078656
+    },
+    "gain": {
+      "mean": 0.083984375,
+      "sd": 0.124127201917466
+    }
+  },
+  {
+    "condition": "dense_full_nextlat",
+    "seeds": 3,
+    "passed_learning_gate": 2,
+    "native": {
+      "mean": 0.40625,
+      "sd": 0.14175974462206292
+    },
+    "refitted": {
+      "mean": 0.5091145833333334,
+      "sd": 0.0658679159892799
+    },
+    "native_non_answer": {
+      "mean": 0.34375,
+      "sd": 0.19566374666200304
+    },
+    "refitted_non_answer": {
+      "mean": 0.18359375,
+      "sd": 0.11020887484113973
+    },
+    "gain": {
+      "mean": 0.10286458333333333,
+      "sd": 0.07638025716699201
+    }
+  },
+  {
+    "condition": "dense_response_gpt",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.6028645833333334,
+      "sd": 0.1277966766386976
+    },
+    "refitted": {
+      "mean": 0.6015625,
+      "sd": 0.12639601318252686
+    },
+    "native_non_answer": {
+      "mean": 0.11458333333333333,
+      "sd": 0.19846415503393386
+    },
+    "refitted_non_answer": {
+      "mean": 0.11458333333333333,
+      "sd": 0.19846415503393386
+    },
+    "gain": {
+      "mean": -0.0013020833333333333,
+      "sd": 0.0022552744890219755
+    }
+  },
+  {
+    "condition": "dense_response_nextlat",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.7994791666666666,
+      "sd": 0.04510548978043951
+    },
+    "refitted": {
+      "mean": 0.80078125,
+      "sd": 0.044021201834315016
+    },
+    "native_non_answer": {
+      "mean": 0.0,
+      "sd": 0.0
+    },
+    "refitted_non_answer": {
+      "mean": 0.0,
+      "sd": 0.0
+    },
+    "gain": {
+      "mean": 0.0013020833333333333,
+      "sd": 0.0022552744890219755
+    }
+  },
+  {
+    "condition": "sparse_full_gpt",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.22298177083333334,
+      "sd": 0.20924052764466286
+    },
+    "refitted": {
+      "mean": 0.22233072916666666,
+      "sd": 0.20834528570857003
+    },
+    "native_non_answer": {
+      "mean": 0.6188151041666666,
+      "sd": 0.34761007052262377
+    },
+    "refitted_non_answer": {
+      "mean": 0.6178385416666666,
+      "sd": 0.34949660658018944
+    },
+    "gain": {
+      "mean": -0.0006510416666666666,
+      "sd": 0.0011276372445109878
+    }
+  },
+  {
+    "condition": "sparse_full_nextlat",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.09244791666666667,
+      "sd": 0.0812211988216182
+    },
+    "refitted": {
+      "mean": 0.18098958333333334,
+      "sd": 0.15704550101171583
+    },
+    "native_non_answer": {
+      "mean": 0.8802083333333334,
+      "sd": 0.1072856617453881
+    },
+    "refitted_non_answer": {
+      "mean": 0.7291666666666666,
+      "sd": 0.2657781421286057
+    },
+    "gain": {
+      "mean": 0.08854166666666667,
+      "sd": 0.07677876556148733
+    }
+  },
+  {
+    "condition": "sparse_response_gpt",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.6155598958333334,
+      "sd": 0.09413745078068386
+    },
+    "refitted": {
+      "mean": 0.6155598958333334,
+      "sd": 0.09413745078068386
+    },
+    "native_non_answer": {
+      "mean": 0.030924479166666668,
+      "sd": 0.05356276911427192
+    },
+    "refitted_non_answer": {
+      "mean": 0.030924479166666668,
+      "sd": 0.05356276911427192
+    },
+    "gain": {
+      "mean": 0.0,
+      "sd": 0.0
+    }
+  },
+  {
+    "condition": "sparse_response_nextlat",
+    "seeds": 3,
+    "passed_learning_gate": 3,
+    "native": {
+      "mean": 0.7770182291666666,
+      "sd": 0.08871323661338919
+    },
+    "refitted": {
+      "mean": 0.7669270833333334,
+      "sd": 0.08525414861911902
+    },
+    "native_non_answer": {
+      "mean": 0.0,
+      "sd": 0.0
+    },
+    "refitted_non_answer": {
+      "mean": 0.0,
+      "sd": 0.0
+    },
+    "gain": {
+      "mean": -0.010091145833333334,
+      "sd": 0.005886439231779012
+    }
+  }
+]
